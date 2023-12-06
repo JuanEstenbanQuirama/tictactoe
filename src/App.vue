@@ -43,12 +43,21 @@ const verifyHorizontal = (fila: number, figure: string) => {
   }
   return true;
 };
+// const verifyDiagonal = (figure: string) => {
+//   if (board.value[0][0] === figure && board.value[2][2] === figure) {
+//     return true;
+//   }
+//   if (board.value[2][0] === figure && board.value[0][2] === figure) {
+//     return true;
+//   }
+//   return false;
+// };
 
 const verifyDiagonal = (figure: string) => {
-  if (board.value[0][0] === figure && board.value[2][2] === figure) {
+  if (board.value[0][0] === figure && board.value[2][2] === figure && board.value[1][1] === figure ) {
     return true;
   }
-  if (board.value[2][0] === figure && board.value[0][2] === figure) {
+  if (board.value[2][0] === figure && board.value[0][2] === figure && board.value[1][1] === figure) {
     return true;
   }
   return false;
